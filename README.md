@@ -1,6 +1,4 @@
-<div align="center">
-  <img src="https://cdn.navid.media/connectors/google-search-console-icon.png" alt="Google Search Console" width="88">
-</div>
+<img src="https://cdn.navid.media/connectors/google-search-console-icon.png" alt="Google Search Console" width="88">
 
 # Google Search Console MCP
 
