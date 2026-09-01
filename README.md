@@ -282,7 +282,7 @@ Verification needs the browser sign-in. A service account cannot verify a proper
 
 Writes work by default. Publishing a sitemap is the point of having the tool, and a server where every write needs a flag just teaches you to set the flag once and forget it.
 
-Three things instead.
+Three mechanisms do the job instead.
 
 **`confirm: true` on the two irreversible tools.** `delete_site` and `delete_sitemap`. Not on `submit_sitemap` or `add_site`: both are trivially undone, and asking for confirmation on everything trains the reflex that defeats asking at all.
 
@@ -377,7 +377,7 @@ Start with `doctor`. It checks each failure mode separately and names the fix.
 <details>
 <summary><b>What is an MCP server?</b></summary>
 
-A standard way to give an AI assistant real access to a tool, so it can act instead of guessing. You install it once, your assistant gains a set of tools, and it works in Claude, Cursor, Codex and anything else that speaks MCP.
+An MCP server is a standard way to give an AI assistant real access to a tool, so it can act instead of guessing. You install it once, your assistant gains a set of tools, and it works in Claude, Cursor, Codex and anything else that speaks MCP.
 
 Without one, an assistant asked about your search traffic can only tell you how Search Console works in general. With one, it reads your actual numbers.
 
@@ -386,7 +386,7 @@ Without one, an assistant asked about your search traffic can only tell you how 
 <details>
 <summary><b>What is Google Search Console?</b></summary>
 
-Google's free tool for site owners. It shows what people searched before they landed on your site, which pages Google shows and where they rank, which pages Google has and has not indexed, and what it thinks is broken.
+Google Search Console is Google's free tool for site owners. It shows what people searched before they landed on your site, which pages Google shows and where they rank, which pages Google has and has not indexed, and what it thinks is broken.
 
 It is the only place Google tells you any of this. Analytics tells you what people did once they arrived; Search Console tells you what happened in Google before that.
 
@@ -413,7 +413,7 @@ Your search data does reach whichever AI model you are using, because that is th
 <details>
 <summary><b>What can it do that I cannot do in the Search Console UI already?</b></summary>
 
-Two things it cannot do at all, and one it does slowly.
+There are two things the UI cannot do at all, and one it does slowly.
 
 Comparing two periods with per-query deltas is an export-and-spreadsheet job in the UI. Here it is one call. Finding every query ranking between 5 and 20, ordered by impressions, is the same story.
 
@@ -424,7 +424,7 @@ Everything else it does faster: checking 30 URLs after a launch is 30 clicks in 
 <details>
 <summary><b>Can it delete something by accident?</b></summary>
 
-Two tools delete: `delete_site` removes a property from your account, and `delete_sitemap` stops Search Console tracking a sitemap. Both refuse to run without `confirm: true`.
+Two tools can delete something. `delete_site` removes a property from your account, and `delete_sitemap` stops Search Console tracking a sitemap. Both refuse to run without `confirm: true`.
 
 Neither touches your website, and neither removes anything from Google's index. `delete_site` loses your account's access to that property's history until it is re-added and re-verified.
 
@@ -435,7 +435,7 @@ Set `GSC_READ_ONLY=1` and both disappear from the tool list entirely.
 <details>
 <summary><b>Does it cost anything?</b></summary>
 
-No. The server is MIT licensed, Search Console is free, and the Google Cloud project you create is free. No card required, no billing to enable.
+It costs nothing. The server is MIT licensed, Search Console is free, and the Google Cloud project you create is free. There is no card required and no billing to enable.
 
 Your AI assistant costs whatever it already costs.
 
@@ -444,7 +444,7 @@ Your AI assistant costs whatever it already costs.
 <details>
 <summary><b>Does it work with ChatGPT, Cursor and claude.ai, or only Claude?</b></summary>
 
-Any MCP client. Section 4 has copy-paste config for Claude Code, Claude Desktop, Cursor, Windsurf, VS Code, Codex CLI and Gemini CLI.
+It works with any MCP client. Section 4 has copy-paste config for Claude Code, Claude Desktop, Cursor, Windsurf, VS Code, Codex CLI and Gemini CLI.
 
 claude.ai is the one that works differently: it runs connectors from Anthropic's cloud rather than your machine, so it needs the HTTP transport and somewhere to host it. See section 10.
 
@@ -453,7 +453,7 @@ claude.ai is the one that works differently: it runs connectors from Anthropic's
 <details>
 <summary><b>Can I connect more than one Google account?</b></summary>
 
-Yes. Run `login` again with a different account and both are stored. Every tool takes an optional `account` argument taking an email, and `list_accounts` shows what is signed in.
+You can connect as many as you like. Run `login` again with a different account and both are stored. Every tool takes an optional `account` argument taking an email, and `list_accounts` shows what is signed in.
 
 Useful when your own sites and a client's sit under different Google logins.
 
@@ -480,7 +480,7 @@ Then revoke Google's side at [myaccount.google.com/permissions](https://myaccoun
 <details>
 <summary><b>Why can it not tell Google to index a page?</b></summary>
 
-Because Google offers no such endpoint. "Request indexing" exists in the Search Console UI and has no API behind it. The Indexing API exists but only accepts job postings and livestreams.
+Google offers no such endpoint. "Request indexing" exists in the Search Console UI and has no API behind it, and the Indexing API that does exist only accepts job postings and livestreams.
 
 Resubmitting a sitemap is the only recrawl signal available programmatically, which is what `submit_sitemap` is for.
 
