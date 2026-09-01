@@ -84,7 +84,7 @@ Paste this into Claude Code, Cursor, or any agent with terminal access:
 ```
 Set up @thenavidm/google-search-console-mcp for me.
 
-1. Read https://github.com/thenavidm/google-search-console-mcp/blob/main/references/setup.md
+1. Read https://github.com/navidmoazzez/google-search-console-mcp/blob/main/references/setup.md
 2. Walk me through the Google Cloud steps one at a time. Stop and wait
    for me after each one. Do not skip the part about publishing the
    OAuth app: it is why these break after a week.
@@ -483,7 +483,7 @@ Resubmitting a sitemap is the only recrawl signal available programmatically, wh
 
 ## Questions
 
-Run into a problem or have a question? [Open an issue](https://github.com/thenavidm/google-search-console-mcp/issues) and I will help.
+Run into a problem or have a question? [Open an issue](https://github.com/navidmoazzez/google-search-console-mcp/issues) and I will help.
 
 ## About the author
 

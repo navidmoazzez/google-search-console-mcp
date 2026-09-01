@@ -32,7 +32,7 @@ Switches:
   GSC_AUDIT_LOG=<path>        one JSON line per attempted write
   GSC_HTTP_TOKEN=<secret>     required to bind anything but loopback over HTTP
 
-Setup guide: https://github.com/thenavidm/google-search-console-mcp/blob/main/references/setup.md
+Setup guide: https://github.com/navidmoazzez/google-search-console-mcp/blob/main/references/setup.md
 `
 
 function flagValue(argv: string[], name: string): string | undefined {

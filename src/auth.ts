@@ -275,7 +275,7 @@ export async function forgetAccount(email: string): Promise<boolean> {
 export async function login(cfg: Config, opts: { port?: number } = {}): Promise<StoredAccount> {
   if (!cfg.clientId || !cfg.clientSecret) {
     throw new AuthError(
-      "Set GSC_CLIENT_ID and GSC_CLIENT_SECRET first. Both come from a Desktop OAuth client in Google Cloud, and the setup guide walks through creating one: https://github.com/thenavidm/google-search-console-mcp/blob/main/references/setup.md",
+      "Set GSC_CLIENT_ID and GSC_CLIENT_SECRET first. Both come from a Desktop OAuth client in Google Cloud, and the setup guide walks through creating one: https://github.com/navidmoazzez/google-search-console-mcp/blob/main/references/setup.md",
     )
   }
 

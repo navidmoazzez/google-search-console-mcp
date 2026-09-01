@@ -27,8 +27,8 @@
   ],
   "author": { "name": "Navid Moazzez", "url": "https://navid.me" },
   "license": "MIT",
-  "repository": { "type": "git", "url": "git+https://github.com/thenavidm/google-search-console-mcp.git" },
-  "homepage": "https://github.com/thenavidm/google-search-console-mcp",
+  "repository": { "type": "git", "url": "git+https://github.com/navidmoazzez/google-search-console-mcp.git" },
+  "homepage": "https://github.com/navidmoazzez/google-search-console-mcp",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.30.0",
     "zod": "^4.5.4",
