@@ -11,7 +11,7 @@
 
 Give any AI agent real access to what Google Search actually recorded about your sites. Queries, pages, impressions, rankings, indexing, sitemaps, from Claude Code, Claude Desktop, claude.ai, Cursor, Codex, or any MCP client.
 
-Built by [Navid Moazzez](https://navid.me).
+Built by [Navid Moazzez](https://navid.me?utm_source=github&utm_medium=readme&utm_campaign=google-search-console-mcp).
 
 ```
 You: what did we lose traffic on last month, and why?
@@ -496,9 +496,9 @@ Navid Moazzez is a leading AI business strategist and the host of the AI Creator
 
 **Links**
 
-- Personal website: [navid.me](https://navid.me)
-- Store: [navid.bio](https://navid.bio)
-- Navid Media: [navid.media](https://navid.media)
+- Personal website: [navid.me](https://navid.me?utm_source=github&utm_medium=readme&utm_campaign=google-search-console-mcp)
+- Store: [navid.bio](https://navid.bio?utm_source=github&utm_medium=readme&utm_campaign=google-search-console-mcp)
+- Navid Media: [navid.media](https://navid.media?utm_source=github&utm_medium=readme&utm_campaign=google-search-console-mcp)
 - YouTube: [@thenavidm](https://youtube.com/@thenavidm?sub_confirmation=1) and [@thenavidai](https://youtube.com/@thenavidai?sub_confirmation=1)
 - X: [@thenavidm](https://x.com/thenavidm)
 - Instagram: [@thenavidm](https://instagram.com/thenavidm)
@@ -520,4 +520,4 @@ Not affiliated with, endorsed by, or sponsored by Google. Google, Google Search 
 
 ---
 
-© 2026 [NM Media](https://navid.media). Made with ❤️ by [Navid Moazzez](https://navid.me).
+© 2026 [NM Media](https://navid.media?utm_source=github&utm_medium=readme&utm_campaign=google-search-console-mcp). Made with ❤️ by [Navid Moazzez](https://navid.me?utm_source=github&utm_medium=readme&utm_campaign=google-search-console-mcp).
