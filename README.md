@@ -506,7 +506,7 @@ Navid Moazzez is a leading AI business strategist and the host of the AI Creator
 
 ## Dependencies
 
-| Package | Licence | Why |
+| Package | License | Why |
 |---|---|---|
 | [@modelcontextprotocol/sdk](https://github.com/modelcontextprotocol/typescript-sdk) | MIT | The MCP protocol implementation |
 | [zod](https://github.com/colinhacks/zod) | MIT | Tool input schemas |
