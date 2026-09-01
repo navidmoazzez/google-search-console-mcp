@@ -1,10 +1,15 @@
+<div align="center">
+  <img src="https://cdn.navid.media/connectors/google-search-console-icon.png" alt="Google Search Console" width="88">
+</div>
+
 # Google Search Console MCP
 
-Give any AI agent real access to what Google Search actually recorded about your sites. Queries, pages, impressions, rankings, indexing, sitemaps, from Claude Code, Claude Desktop, claude.ai, Cursor, Codex, or any MCP client.
-
+[![Stars](https://img.shields.io/github/stars/navidmoazzez/google-search-console-mcp?style=flat&logo=github&label=Stars)](https://github.com/navidmoazzez/google-search-console-mcp)
 [![License](https://img.shields.io/badge/License-MIT-blue)](https://github.com/navidmoazzez/google-search-console-mcp/blob/main/LICENSE)
 [![YouTube](https://img.shields.io/badge/YouTube-@thenavidm-red?logo=youtube&logoColor=white)](https://youtube.com/@thenavidm?sub_confirmation=1)
 [![X](https://img.shields.io/badge/X-@thenavidm-black?logo=x)](https://x.com/thenavidm)
+
+Give any AI agent real access to what Google Search actually recorded about your sites. Queries, pages, impressions, rankings, indexing, sitemaps, from Claude Code, Claude Desktop, claude.ai, Cursor, Codex, or any MCP client.
 
 Built by [Navid Moazzez](https://navid.me).
 
