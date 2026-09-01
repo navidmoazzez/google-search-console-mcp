@@ -3,6 +3,7 @@ import type { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js"
 import { request, normalizeSite, seg, WMX_BASE } from "../api/client.js"
 import { labelRows, isoDaysAgo, totals, DATA_LAG_DAYS, type RawRow } from "../format/rows.js"
 import { ACCOUNT, SITE, tool, type ToolContext } from "./shared.js"
+import { frameUntrusted } from "../safety.js"
 
 const DIMENSION = z.enum(["query", "page", "country", "device", "searchAppearance", "date", "hour"])
 
@@ -108,7 +109,20 @@ export function registerAnalyticsTools(server: McpServer, ctx: ToolContext): voi
       if (groups) body.dimensionFilterGroups = groups
       if (a.type) body.type = a.type
       const res = await query(token, a.site, body)
-      return { site: normalizeSite(a.site), range: { start, end }, totals: totals(res.rows), rows: labelRows(res.rows, ["query"]) }
+      const rows = labelRows(res.rows, ["query"])
+      return {
+        site: normalizeSite(a.site),
+        range: { start, end },
+        totals: totals(res.rows),
+        rows,
+        /* A query is whatever a stranger typed into Google, so it is the one
+           genuinely injectable field this API returns. The rows above stay
+           machine-readable; this is the framed copy for the model to read. */
+        queries_are_untrusted_input: frameUntrusted(
+          "Search queries",
+          rows.map((r) => String(r.query ?? "")).join("\n"),
+        ),
+      }
     },
   })
 

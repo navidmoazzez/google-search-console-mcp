@@ -3,14 +3,24 @@
   "version": "0.1.0",
   "description": "Google Search Console MCP server for Claude Code and AI agents. Search analytics, URL inspection, sitemaps and property verification, over the Search Console API.",
   "type": "module",
-  "bin": { "google-search-console-mcp": "./dist/index.js" },
+  "bin": {
+    "google-search-console-mcp": "./dist/index.js"
+  },
   "main": "./dist/index.js",
-  "files": ["dist", "README.md", "SKILL.md", "LICENSE"],
-  "engines": { "node": ">=20" },
+  "files": [
+    "dist",
+    "README.md",
+    "SKILL.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",
     "start": "node dist/index.js",
+    "lint": "eslint src tests",
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
     "prepublishOnly": "npm run build"
@@ -25,19 +35,28 @@
     "claude-code",
     "ai-agents"
   ],
-  "author": { "name": "Navid Moazzez", "url": "https://navid.me" },
+  "author": {
+    "name": "Navid Moazzez",
+    "url": "https://navid.me"
+  },
   "license": "MIT",
-  "repository": { "type": "git", "url": "git+https://github.com/navidmoazzez/google-search-console-mcp.git" },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/navidmoazzez/google-search-console-mcp.git"
+  },
   "homepage": "https://github.com/navidmoazzez/google-search-console-mcp",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.30.0",
-    "zod": "^4.5.4",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "zod": "^4.5.4"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "@types/express": "^5.0.0",
     "@types/node": "^22.10.2",
+    "eslint": "^10.9.1",
     "typescript": "^5.7.2",
+    "typescript-eslint": "^8.69.0",
     "vitest": "^2.1.8"
   }
 }

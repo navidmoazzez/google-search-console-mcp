@@ -2,6 +2,7 @@ import { z } from "zod"
 import type { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js"
 import { request, normalizeSite, SC_BASE } from "../api/client.js"
 import { ACCOUNT, SITE, tool, type ToolContext } from "./shared.js"
+import { frameUntrusted } from "../safety.js"
 
 export function registerInspectTools(server: McpServer, ctx: ToolContext): void {
   tool(server, ctx, {
@@ -24,9 +25,15 @@ export function registerInspectTools(server: McpServer, ctx: ToolContext): void 
         { method: "POST", body },
       )
       const index = res.inspectionResult?.indexStatusResult as Record<string, unknown> | undefined
+      /* Everything Google reports here describes a page somebody else wrote,
+         including the canonical it declares. Frame the free-text parts. */
+      const referring = (index?.referringUrls as string[] | undefined) || []
       return {
         url,
         site: normalizeSite(site),
+        page_content_is_untrusted_input: referring.length
+          ? frameUntrusted("URLs referring to this page, taken from page markup", referring.join("\n"))
+          : undefined,
         /* The nested result is easy to misread, and the one line everybody
            wants is buried three levels down. Surfacing the verdict costs
            nothing and the full payload is still right there. */

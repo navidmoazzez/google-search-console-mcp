@@ -2,7 +2,7 @@
 
 Give any AI agent real access to what Google Search actually recorded about your sites. Queries, pages, impressions, rankings, indexing, sitemaps, from Claude Code, Claude Desktop, claude.ai, Cursor, Codex, or any MCP client.
 
-[![License](https://img.shields.io/badge/License-MIT-blue)](./LICENSE)
+[![License](https://img.shields.io/badge/License-MIT-blue)](https://github.com/navidmoazzez/google-search-console-mcp/blob/main/LICENSE)
 [![YouTube](https://img.shields.io/badge/YouTube-@thenavidm-red?logo=youtube&logoColor=white)](https://youtube.com/@thenavidm?sub_confirmation=1)
 [![X](https://img.shields.io/badge/X-@thenavidm-black?logo=x)](https://x.com/thenavidm)
 
@@ -73,7 +73,7 @@ That is the whole install. `npx` fetches it on demand, so there is nothing to up
 
 You need a Google credential. Google does not hand out Search Console access without a Google Cloud project, so there is a real setup here: about five minutes, once.
 
-**[The full walkthrough is in references/setup.md](./references/setup.md).** Every click, both routes, and what each error means.
+**[The full walkthrough is in references/setup.md](https://github.com/navidmoazzez/google-search-console-mcp/blob/main/references/setup.md).** Every click, both routes, and what each error means.
 
 ### Have an agent do it
 
@@ -97,7 +97,7 @@ Set up @thenavidm/google-search-console-mcp for me.
 
 While your OAuth app's publishing status is **Testing**, Google issues refresh tokens that expire after **7 days**. Everything works, and then a week later it stops for no visible reason.
 
-Click **Publish app** on the **Audience** page during setup. The [setup guide](./references/setup.md) covers where that is and why the verification warning does not apply to you.
+Click **Publish app** on the **Audience** page during setup. The [setup guide](https://github.com/navidmoazzez/google-search-console-mcp/blob/main/references/setup.md) covers where that is and why the verification warning does not apply to you.
 
 ### Signing in
 
@@ -110,7 +110,7 @@ npx -y @thenavidm/google-search-console-mcp@latest login
 
 A browser opens, you pick your Google account, and the refresh token is saved to `~/.google-search-console-mcp/tokens.json`.
 
-For a server or CI with no browser, use a service account instead. Both routes are in the [setup guide](./references/setup.md).
+For a server or CI with no browser, use a service account instead. Both routes are in the [setup guide](https://github.com/navidmoazzez/google-search-console-mcp/blob/main/references/setup.md).
 
 ## 4. Connect your client 🔌
 
@@ -390,7 +390,7 @@ It is the only place Google tells you any of this. Analytics tells you what peop
 <details>
 <summary><b>Do I need to be technical to use this?</b></summary>
 
-You need to be comfortable pasting commands into a terminal and clicking through a few pages in Google Cloud. The [setup guide](./references/setup.md) covers every click, and the prompt in section 3 hands the whole thing to an agent that walks you through it one step at a time.
+You need to be comfortable pasting commands into a terminal and clicking through a few pages in Google Cloud. The [setup guide](https://github.com/navidmoazzez/google-search-console-mcp/blob/main/references/setup.md) covers every click, and the prompt in section 3 hands the whole thing to an agent that walks you through it one step at a time.
 
 The Google Cloud part is the hard bit, and it is a one-time five minutes.
 
@@ -509,7 +509,7 @@ Navid Moazzez is a leading AI business strategist and the host of the AI Creator
 
 ## License
 
-MIT. See [LICENSE](./LICENSE).
+MIT. See [LICENSE](https://github.com/navidmoazzez/google-search-console-mcp/blob/main/LICENSE).
 
 Not affiliated with, endorsed by, or sponsored by Google. Google, Google Search Console and Google Cloud are trademarks of Google LLC.
 
