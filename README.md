@@ -46,8 +46,6 @@ Claude: Comparing the last 28 days to the 28 before.
 | 11 | [Troubleshooting](#11-troubleshooting-) | When something breaks |
 | 12 | [FAQ](#12-faq-) | Start here if you are new |
 
----
-
 ## 1. What you can ask it 💬
 
 - Which queries lost the most clicks this month compared to last?
