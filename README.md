@@ -12,7 +12,7 @@ Give any AI agent real access to what Google Search actually recorded about your
 
 Built by [Navid Moazzez](https://navid.me?utm_source=github&utm_medium=readme&utm_campaign=google-search-console-mcp).
 
-<img src="https://cdn.navid.media/repos/google-search-console-mcp.gif?v=1" alt="Claude Code using the Google Search Console MCP server" width="520">
+<img src="https://cdn.navid.media/repos/google-search-console-mcp.gif?v=2" alt="Claude Code using the Google Search Console MCP server" width="520">
 
 ## Contents
 
