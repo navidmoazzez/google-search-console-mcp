@@ -6,6 +6,7 @@
 [![License](https://img.shields.io/badge/License-MIT-blue)](https://github.com/navidmoazzez/google-search-console-mcp/blob/main/LICENSE)
 [![YouTube](https://img.shields.io/badge/YouTube-@thenavidm-red?logo=youtube&logoColor=white)](https://youtube.com/@thenavidm?sub_confirmation=1)
 [![X](https://img.shields.io/badge/X-@thenavidm-black?logo=x)](https://x.com/thenavidm)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-thenavidm-0A66C2?logo=linkedin&logoColor=white)](https://linkedin.com/in/thenavidm)
 
 Give any AI agent real access to what Google Search actually recorded about your sites. Queries, pages, impressions, rankings, indexing, sitemaps, from Claude Code, Claude Desktop, claude.ai, Cursor, Codex, or any MCP client.
 
