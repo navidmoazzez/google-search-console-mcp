@@ -478,7 +478,7 @@ Navid Moazzez is a leading AI business strategist and the host of the AI Creator
 **Links**
 
 - Personal website: [navid.me](https://navid.me?utm_source=github&utm_medium=readme&utm_campaign=google-search-console-mcp)
-- Store: [navid.bio](https://navid.bio?utm_source=github&utm_medium=readme&utm_campaign=google-search-console-mcp)
+- Link in bio: [navid.bio](https://navid.bio?utm_source=github&utm_medium=readme&utm_campaign=google-search-console-mcp)
 - Navid Media: [navid.media](https://navid.media?utm_source=github&utm_medium=readme&utm_campaign=google-search-console-mcp)
 - YouTube: [@thenavidm](https://youtube.com/@thenavidm?sub_confirmation=1) and [@thenavidai](https://youtube.com/@thenavidai?sub_confirmation=1)
 - X: [@thenavidm](https://x.com/thenavidm)
