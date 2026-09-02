@@ -86,3 +86,12 @@ before the first tool result arrives.
 For an agent running unattended, particularly against properties you do not
 control, `GSC_READ_ONLY=1` is the real defence. It unregisters every write tool,
 so there is nothing for an injected instruction to reach.
+
+## Good-faith research
+
+Look at whatever you like in this repository. When testing, please do not access,
+change or delete data that is not yours, and do not disrupt a service other
+people depend on. If a test could affect anyone else, stop and send a private
+report first.
+
+Research done in that spirit is welcome, and nothing here is a trap.
