@@ -12,23 +12,7 @@ Give any AI agent real access to what Google Search actually recorded about your
 
 Built by [Navid Moazzez](https://navid.me?utm_source=github&utm_medium=readme&utm_campaign=google-search-console-mcp).
 
-```
-You: what did we lose traffic on last month, and why?
-
-Claude: Comparing the last 28 days to the 28 before.
-
-  Clicks fell 18%, from 4,210 to 3,455. Impressions barely moved,
-  so this is a ranking and click-through problem, not a demand one.
-
-  Almost all of it is one page. /guides/setup went from position
-  3.1 to 8.4 and lost 620 clicks on its own. Everything else is flat.
-
-  I inspected it. Google is indexing it, but the canonical it picked
-  is /guides/setup?ref=nav, not the clean URL. That split happened
-  around the 14th.
-
-  Want me to look at what changed in the nav that week?
-```
+<img src="https://cdn.navid.media/repos/google-search-console-mcp.gif?v=1" alt="Claude Code using the Google Search Console MCP server" width="520">
 
 ## Contents
 
