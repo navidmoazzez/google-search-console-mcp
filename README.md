@@ -2,8 +2,8 @@
 
 # Google Search Console MCP
 
-[![Stars](https://img.shields.io/github/stars/navidmoazzez/google-search-console-mcp?style=flat&logo=github&label=Stars)](https://github.com/navidmoazzez/google-search-console-mcp)
-[![License](https://img.shields.io/badge/License-MIT-blue)](https://github.com/navidmoazzez/google-search-console-mcp/blob/main/LICENSE)
+[![Stars](https://img.shields.io/github/stars/thenavidm/google-search-console-mcp?style=flat&logo=github&label=Stars)](https://github.com/thenavidm/google-search-console-mcp)
+[![License](https://img.shields.io/badge/License-MIT-blue)](https://github.com/thenavidm/google-search-console-mcp/blob/main/LICENSE)
 [![YouTube](https://img.shields.io/badge/YouTube-@thenavidm-red?logo=youtube&logoColor=white)](https://youtube.com/@thenavidm?sub_confirmation=1)
 [![X](https://img.shields.io/badge/X-@thenavidm-black?logo=x)](https://x.com/thenavidm)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-thenavidm-0A66C2?logo=linkedin&logoColor=white)](https://linkedin.com/in/thenavidm)
@@ -59,7 +59,7 @@ That is the whole install. `npx` fetches it on demand, so there is nothing to up
 
 You need a Google credential. Google does not hand out Search Console access without a Google Cloud project, so there is a real setup here: about five minutes, once.
 
-**[The full walkthrough is in INSTALL.md](https://github.com/navidmoazzez/google-search-console-mcp/blob/main/INSTALL.md).** Every click, both routes, and what each error means.
+**[The full walkthrough is in INSTALL.md](https://github.com/thenavidm/google-search-console-mcp/blob/main/INSTALL.md).** Every click, both routes, and what each error means.
 
 ### Have an agent do it
 
@@ -70,7 +70,7 @@ Paste this into Claude Code, Cursor, or any agent with terminal access:
 ```
 Set up @thenavidm/google-search-console-mcp for me.
 
-1. Read https://github.com/navidmoazzez/google-search-console-mcp/blob/main/INSTALL.md
+1. Read https://github.com/thenavidm/google-search-console-mcp/blob/main/INSTALL.md
 2. Walk me through the Google Cloud steps one at a time. Stop and wait
    for me after each one. Do not skip the part about publishing the
    OAuth app: it is why these break after a week.
@@ -83,7 +83,7 @@ Set up @thenavidm/google-search-console-mcp for me.
 
 While your OAuth app's publishing status is **Testing**, Google issues refresh tokens that expire after **7 days**. Everything works, and then a week later it stops for no visible reason.
 
-Click **Publish app** on the **Audience** page during setup. The [setup guide](https://github.com/navidmoazzez/google-search-console-mcp/blob/main/INSTALL.md) covers where that is and why the verification warning does not apply to you.
+Click **Publish app** on the **Audience** page during setup. The [setup guide](https://github.com/thenavidm/google-search-console-mcp/blob/main/INSTALL.md) covers where that is and why the verification warning does not apply to you.
 
 ### Signing in
 
@@ -96,7 +96,7 @@ npx -y @thenavidm/google-search-console-mcp@latest login
 
 A browser opens, you pick your Google account, and the refresh token is saved to `~/.google-search-console-mcp/tokens.json`.
 
-For a server or CI with no browser, use a service account instead. Both routes are in the [setup guide](https://github.com/navidmoazzez/google-search-console-mcp/blob/main/INSTALL.md).
+For a server or CI with no browser, use a service account instead. Both routes are in the [setup guide](https://github.com/thenavidm/google-search-console-mcp/blob/main/INSTALL.md).
 
 ## 4. Connect your client 🔌
 
@@ -376,7 +376,7 @@ It is the only place Google tells you any of this. Analytics tells you what peop
 <details>
 <summary><b>Do I need to be technical to use this?</b></summary>
 
-You need to be comfortable pasting commands into a terminal and clicking through a few pages in Google Cloud. The [setup guide](https://github.com/navidmoazzez/google-search-console-mcp/blob/main/INSTALL.md) covers every click, and the prompt in section 3 hands the whole thing to an agent that walks you through it one step at a time.
+You need to be comfortable pasting commands into a terminal and clicking through a few pages in Google Cloud. The [setup guide](https://github.com/thenavidm/google-search-console-mcp/blob/main/INSTALL.md) covers every click, and the prompt in section 3 hands the whole thing to an agent that walks you through it one step at a time.
 
 The Google Cloud part is the hard bit, and it is a one-time five minutes.
 
@@ -469,7 +469,7 @@ Resubmitting a sitemap is the only recrawl signal available programmatically, wh
 
 ## Questions
 
-Run into a problem or have a question? [Open an issue](https://github.com/navidmoazzez/google-search-console-mcp/issues) and I will help.
+Run into a problem or have a question? [Open an issue](https://github.com/thenavidm/google-search-console-mcp/issues) and I will help.
 
 ## About the author
 
@@ -497,7 +497,7 @@ If this is useful, star the repo and come say hi on [X](https://x.com/thenavidm)
 
 ## License
 
-MIT. See [LICENSE](https://github.com/navidmoazzez/google-search-console-mcp/blob/main/LICENSE).
+MIT. See [LICENSE](https://github.com/thenavidm/google-search-console-mcp/blob/main/LICENSE).
 
 Not affiliated with, endorsed by, or sponsored by Google. Google, Google Search Console and Google Cloud are trademarks of Google LLC.
 
