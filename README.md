@@ -59,7 +59,7 @@ That is the whole install. `npx` fetches it on demand, so there is nothing to up
 
 You need a Google credential. Google does not hand out Search Console access without a Google Cloud project, so there is a real setup here: about five minutes, once.
 
-**[The full walkthrough is in references/setup.md](https://github.com/navidmoazzez/google-search-console-mcp/blob/main/references/setup.md).** Every click, both routes, and what each error means.
+**[The full walkthrough is in INSTALL.md](https://github.com/navidmoazzez/google-search-console-mcp/blob/main/INSTALL.md).** Every click, both routes, and what each error means.
 
 ### Have an agent do it
 
@@ -70,7 +70,7 @@ Paste this into Claude Code, Cursor, or any agent with terminal access:
 ```
 Set up @thenavidm/google-search-console-mcp for me.
 
-1. Read https://github.com/navidmoazzez/google-search-console-mcp/blob/main/references/setup.md
+1. Read https://github.com/navidmoazzez/google-search-console-mcp/blob/main/INSTALL.md
 2. Walk me through the Google Cloud steps one at a time. Stop and wait
    for me after each one. Do not skip the part about publishing the
    OAuth app: it is why these break after a week.
@@ -83,7 +83,7 @@ Set up @thenavidm/google-search-console-mcp for me.
 
 While your OAuth app's publishing status is **Testing**, Google issues refresh tokens that expire after **7 days**. Everything works, and then a week later it stops for no visible reason.
 
-Click **Publish app** on the **Audience** page during setup. The [setup guide](https://github.com/navidmoazzez/google-search-console-mcp/blob/main/references/setup.md) covers where that is and why the verification warning does not apply to you.
+Click **Publish app** on the **Audience** page during setup. The [setup guide](https://github.com/navidmoazzez/google-search-console-mcp/blob/main/INSTALL.md) covers where that is and why the verification warning does not apply to you.
 
 ### Signing in
 
@@ -96,7 +96,7 @@ npx -y @thenavidm/google-search-console-mcp@latest login
 
 A browser opens, you pick your Google account, and the refresh token is saved to `~/.google-search-console-mcp/tokens.json`.
 
-For a server or CI with no browser, use a service account instead. Both routes are in the [setup guide](https://github.com/navidmoazzez/google-search-console-mcp/blob/main/references/setup.md).
+For a server or CI with no browser, use a service account instead. Both routes are in the [setup guide](https://github.com/navidmoazzez/google-search-console-mcp/blob/main/INSTALL.md).
 
 ## 4. Connect your client 🔌
 
@@ -376,7 +376,7 @@ It is the only place Google tells you any of this. Analytics tells you what peop
 <details>
 <summary><b>Do I need to be technical to use this?</b></summary>
 
-You need to be comfortable pasting commands into a terminal and clicking through a few pages in Google Cloud. The [setup guide](https://github.com/navidmoazzez/google-search-console-mcp/blob/main/references/setup.md) covers every click, and the prompt in section 3 hands the whole thing to an agent that walks you through it one step at a time.
+You need to be comfortable pasting commands into a terminal and clicking through a few pages in Google Cloud. The [setup guide](https://github.com/navidmoazzez/google-search-console-mcp/blob/main/INSTALL.md) covers every click, and the prompt in section 3 hands the whole thing to an agent that walks you through it one step at a time.
 
 The Google Cloud part is the hard bit, and it is a one-time five minutes.
 

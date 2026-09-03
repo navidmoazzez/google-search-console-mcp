@@ -1,4 +1,4 @@
-# Setup
+# Install
 
 Getting a credential Google will accept. This is the part people abandon, so it
 is written out in full.
